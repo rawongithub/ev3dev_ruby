@@ -1,7 +1,6 @@
-# http://www.ev3dev.org/docs/tutorials/using-ev3-buttons/
-
 module Ev3dev
   class Button
+    # http://www.ev3dev.org/docs/tutorials/using-ev3-buttons/
     # from linux/input.h
     KEY_UP    = 103
     KEY_DOWN  = 108

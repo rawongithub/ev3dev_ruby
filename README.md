@@ -20,7 +20,7 @@ $ ssh robot@ev3dev.local
 then
 
 ```
-robot@ev3dev:~$ sudo gem install ev3dev
+robot@ev3dev:~$ sudo gem install ev3dev_ruby
 ```
 
 ## Run examples

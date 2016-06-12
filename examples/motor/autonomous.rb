@@ -13,7 +13,7 @@ lm_b.duty_cycle_sp 50
 lm_b.stop_command 'brake'
 lm_c.duty_cycle_sp -50
 
-puts 'Plese press Touch Sensor to start'
+puts 'Please press Touch Sensor to start'
 while touch.value0.to_i == 0
   sleep 0.1
 end
@@ -23,7 +23,7 @@ lm_c.command 'run-forever'
 
 sleep 0.2
 
-puts 'Plese press Touch Sensor to stop'
+puts 'Please press Touch Sensor to stop'
 while touch.value0.to_i == 0
   sleep 0.1
 end

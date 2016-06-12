@@ -27,7 +27,7 @@ lm_c.duty_cycle_sp 30
 lm_b.command 'run-forever'
 lm_c.command 'run-forever'
 
-puts 'Plese press Touch Sensor to stop'
+puts 'Please press Touch Sensor to stop'
 loop do
   if touch.value0.to_i == 1
     lm_b.command 'stop'

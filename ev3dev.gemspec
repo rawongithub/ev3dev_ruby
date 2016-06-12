@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["aqua055@gmail.com"]
 
   spec.summary       = %q{ev3dev_ruby}
-  spec.description   = %q{ev3dev ruby binding}
+  spec.description   = %q{ev3dev ruby binding for LEGO Mindstorms EV3}
   spec.homepage      = "https://github.com/noanoa07/ev3dev_ruby"
   spec.license       = "MIT"
 
