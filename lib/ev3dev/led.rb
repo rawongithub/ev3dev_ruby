@@ -10,7 +10,7 @@ module Ev3dev
 
     MAX_BRIGHTNESS     = 255
 
-    def initialize()
+    def initialize
       raise "couldn't find LED attributes" unless File.exist?(PATH)
 
       @left_green   = set_led_path("left" , "green")
@@ -25,32 +25,32 @@ module Ev3dev
       @paths = @default_paths
     end
 
-    def left()
+    def left
       @paths = @left_paths
       self
     end
 
-    def right()
+    def right
       @paths = @right_paths
       self
     end
 
-    def left_green()
+    def left_green
       @paths = [@left_green]
       self
     end
 
-    def left_red()
+    def left_red
       @paths = [@left_red]
       self
     end
 
-    def right_green()
+    def right_green
       @paths = [@right_green]
       self
     end
 
-    def right_red()
+    def right_red
       @paths = [@right_red]
       self
     end
@@ -63,7 +63,7 @@ module Ev3dev
       @paths = @default_paths
     end
 
-    def off()
+    def off
       self.on(0, 0)
     end
 
@@ -116,7 +116,7 @@ module Ev3dev
       @paths = @default_paths
     end
 
-    def flash()
+    def flash
       raise "couldn't specify the left/right green/red LED" if @paths.size != 1
       path = @paths[0]
       write_value_to_file(path, "activate", 1)
@@ -178,5 +178,3 @@ module Ev3dev
     end
   end
 end
-
-

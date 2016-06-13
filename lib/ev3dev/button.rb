@@ -19,7 +19,7 @@ module Ev3dev
     BUF_LEN = (KEY_MAX + 7) / 8
     PATH = "/dev/input/by-path/platform-gpio-keys.0-event"
 
-    def initialize()
+    def initialize
       raise "couldn't find LED attributes" unless File.exist?(PATH)
       @buttons = {up: KEY_UP, down: KEY_DOWN, left: KEY_LEFT, right: KEY_RIGHT, enter: KEY_ENTER, back: KEY_BACK}
     end

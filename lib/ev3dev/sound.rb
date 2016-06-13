@@ -2,7 +2,7 @@ module Ev3dev
   class Sound < Device
     PATH = "/sys/devices/platform"
 
-    def initialize()
+    def initialize
       Dir.glob("#{PATH}/*").each do |path|
         if File.exist?("#{path}/tone")
           super path

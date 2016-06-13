@@ -31,7 +31,19 @@ http://freemusicarchive.org/music/TRG_Banks/Instrumentals_1914/TRG_Banks_-_Instr
 sample.mp3
 http://freemusicarchive.org/music/TRG_Banks/Instrumentals_1914/TRG_Banks_-_Instrumentals_No_Copyright_-_09_Horse_ride_4
 
+cat_10.jpg
+cat_10.mono
+https://pixabay.com/photo-1198863/
+
+
 espeak_sample.txt
+face_1.mono
+face_2.mono
+face_3.mono
+face_4.mono
+face_5.mono
+black.mono
+white.mono
 
 
 CC0 1.0 Universal

@@ -1,9 +1,14 @@
 # ev3dev ruby binding for LEGO Mindstorms EV3
 
 
-ev3dev_ruby is a gem to controll sensors and motors on EV3 using Ruby.
+ev3dev_ruby is a gem to controll sensors and motors on EV3 using Ruby on ev3dev OS.
+ev3dev OS is a Debian Linux-based operating system for LEGO Mindstroms EV3.
 
-- [ev3dev](http://www.ev3dev.org) version; ev3dev-jessie-2015-12-30 or later
+- [ev3dev OS](http://www.ev3dev.org) version; ev3dev-jessie-2015-12-30
+
+
+## Install ev3dev OS
+See [ev3dev OS website](http://www.ev3dev.org)
 
 
 ## Install ev3dev_ruby on EV3
@@ -15,11 +20,10 @@ SSH remote access to the EV3 from PC
 $ ssh robot@ev3dev.local
 ```
 
-
-
 then
 
 ```
+robot@ev3dev:~$ sudo apt-get update
 robot@ev3dev:~$ sudo gem install ev3dev_ruby
 ```
 
@@ -118,12 +122,14 @@ irb(main):012:0>
   - [LED Transient Trigger](https://www.kernel.org/doc/Documentation/leds/ledtrig-transient.txt)
   - Original Led Class APIs are added. Checkout examples.
 - [Buttons](http://www.ev3dev.org/docs/tutorials/using-ev3-buttons/)
+- [Display](http://www.ev3dev.org/docs/tutorials/using-ev3-lcd/)
+  - Original Screen Class and Image Class APIs are added. See Display_API.md and examples.
 
-#### These EV3 devices below are not supported yet.
+#### The EV3 device below are not supported yet.
 
-- [LCD](http://www.ev3dev.org/docs/tutorials/using-ev3-lcd/)
 - [Bluetooth](https://github.com/ev3dev/ev3dev/wiki/Using-Bluetooth)
 
 
 ## More Info
+
 - [Getting Started with ev3dev - ev3dev.org](http://www.ev3dev.org/docs/getting-started/)

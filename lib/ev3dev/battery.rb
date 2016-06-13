@@ -2,7 +2,7 @@ module Ev3dev
   class Battery < Device
     PATH = "/sys/class/power_supply"
 
-    def initialize()
+    def initialize
       Dir.glob("#{PATH}/*").each do |path|
         if File.exist?("#{path}/voltage_now")
           super path
