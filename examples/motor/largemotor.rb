@@ -14,15 +14,15 @@ p lm_b.device_path   #=> "/sys/class/tacho-motor/motor0"
 p lm_b.driver_name   #=> "lego-ev3-l-motor"
 p lm_b.address       #=> "outB"
 p lm_b.commands      #=> "run-forever run-to-abs-pos run-to-rel-pos run-timed run-direct stop reset"
-p lm_b.stop_commands #=> "coast brake hold"
-p lm_b.stop_command  #=> "coast"
+p lm_b.stop_actions #=> "coast brake hold"
+p lm_b.stop_action  #=> "coast"
 
 
-lm_b.stop_command 'brake'
+lm_b.stop_action 'brake'
 lm_b.duty_cycle_sp 50
 lm_b.time_sp 2000
 
-lm_c.stop_command 'brake'
+lm_c.stop_action 'brake'
 lm_c.duty_cycle_sp 50
 lm_c.time_sp 2000
 
@@ -44,11 +44,11 @@ sleep 4
 lm_b.command 'reset'
 lm_c.command 'reset'
 
-lm_b.stop_command 'brake'
+lm_b.stop_action 'brake'
 lm_b.position_sp 360
 lm_b.duty_cycle_sp 60
 
-lm_c.stop_command 'brake'
+lm_c.stop_action 'brake'
 lm_c.position_sp -360
 lm_c.duty_cycle_sp 60
 

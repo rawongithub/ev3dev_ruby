@@ -13,8 +13,8 @@ p mm.device_path    #=> "/sys/class/tacho-motor/motor0"
 p mm.driver_name    #=> "lego-ev3-m-motor"
 p mm.address        #=> "outA"
 p mm.commands       #=> "run-forever run-to-abs-pos run-to-rel-pos run-timed run-direct stop reset"
-p mm.stop_commands  #=> "coast brake hold"
-p mm.stop_command   #=> "coast"
+p mm.stop_actions  #=> "coast brake hold"
+p mm.stop_action   #=> "coast"
 
 
 mm.duty_cycle_sp 100

@@ -21,10 +21,10 @@ p us.value0.to_i  #=> 913
 lm_b = Ev3dev::Motor.new 'B'
 lm_c = Ev3dev::Motor.new 'C'
 
-lm_b.stop_command 'brake'
+lm_b.stop_action 'brake'
 lm_b.duty_cycle_sp 50
 
-lm_c.stop_command 'brake'
+lm_c.stop_action 'brake'
 lm_c.duty_cycle_sp 50
 
 lm_b.command 'run-forever'

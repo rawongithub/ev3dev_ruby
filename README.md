@@ -1,7 +1,7 @@
 # ev3dev ruby binding for LEGO Mindstorms EV3
 
 
-ev3dev_ruby is a gem to controll sensors and motors on EV3 using Ruby on ev3dev OS.  
+ev3dev_ruby is a gem to controll sensors and motors on EV3 using Ruby on ev3dev OS.
 ev3dev OS is a Debian Linux-based operating system for LEGO Mindstroms EV3.
 
 - [ev3dev OS](http://www.ev3dev.org) version; ev3dev-jessie-2015-12-30
@@ -82,7 +82,7 @@ irb(main):005:0> mm.address
 => "outB"
 irb(main):006:0> mm.commands
 => "run-forever run-to-abs-pos run-to-rel-pos run-timed run-direct stop reset"
-irb(main):007:0> mm.stop_commands
+irb(main):007:0> mm.stop_actions
 => "coast brake hold"
 irb(main):008:0> mm.duty_cycle_sp 100
 => #<Ev3dev::Motor:0x193890 @device_path="/sys/class/tacho-motor/motor0">

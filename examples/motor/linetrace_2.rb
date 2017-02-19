@@ -9,8 +9,8 @@ col.mode 'COL-REFLECT'
 lm_b = Ev3dev::Motor.new 'B'
 lm_c = Ev3dev::Motor.new 'C'
 
-lm_b.stop_command 'brake'
-lm_c.stop_command 'brake'
+lm_b.stop_action 'brake'
+lm_c.stop_action 'brake'
 
 puts 'Plese press Touch Sensor to start'
 while touch.value0.to_i == 0
