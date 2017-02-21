@@ -82,9 +82,9 @@ module Ev3dev
     def test_bit(bit, bytes)
       # bit in bytes is 1 when released and 0 when pressed
       if (bytes[bit / 8] & (1 << (bit % 8))) == 0
-        true   # pressed
-      else
         false  # released
+      else
+        true   # pressed
       end
     end
   end
